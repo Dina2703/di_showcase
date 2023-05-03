@@ -2,8 +2,8 @@ import Image from "next/image";
 import Head from "next/head";
 import { BsFillMoonStarsFill, BsGithub } from "react-icons/bs";
 import { AiOutlineArrowDown } from "react-icons/ai";
-import codingGirl from "../public/coding_girl.svg";
 import avatar from "../public/me2.png";
+import Cards from "@/components/Cards";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
         />
       </Head>
       <main className="bg-slate-100 px-6 md:px-10">
-        <section className="min-h-screen max-w-3xl m-auto">
+        <section id="hero" className="min-h-screen max-w-3xl m-auto">
           {/* navbar */}
           <nav className="py-10 mb-8 flex justify-between text-gray-600">
             <h1
@@ -45,15 +45,11 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          {/*Hero section  */}
 
-          {/* <div className="relative mx-auto w-40 h-40">
-            <Image src={codingGirl} />
-          </div> */}
           <div className="flex flex-col lg:flex-row-reverse items-start">
             <div
               style={{ position: "relative" }}
-              className=" overflow-hidden mx-auto bg-gradient-to-br from-green-400  to-white rounded-full w-56 h-56 shadow-lg lg:mt-6"
+              className=" overflow-hidden mx-auto bg-gradient-to-br from-green-300  to-white rounded-full w-56 h-56 shadow-lg lg:mt-6"
             >
               <Image
                 alt="Picture of the author"
@@ -79,6 +75,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
+        <section id="projects">
+          <Cards />
         </section>
       </main>
     </div>
