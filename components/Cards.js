@@ -1,5 +1,7 @@
 import React from "react";
 import { BsGithub } from "react-icons/bs";
+import { FaRegEnvelope } from "react-icons/fa";
+
 import tutorWebsite from "../public/anara-eng.jpeg";
 import domCoffee from "../public/dom-coffee.png";
 import print from "../public/print.png";
@@ -62,10 +64,13 @@ const projects = [
 
 function Cards() {
   return (
-    <div className="bg-gray-200">
-      <div className="h-10 bg-gray-600 flex items-center justify-end pr-6">
+    <div className="bg-gray-200 pb-10">
+      <div className="h-10 bg-gray-600 flex items-center justify-end gap-5 pr-6 md:pr-12 ">
         <a href="https://github.com/Dina2703" target="_blank">
           <BsGithub className="text-white text-xl" />
+        </a>
+        <a href="mailto:dina.b.idrissova@gamil.com" target="_blank">
+          <FaRegEnvelope className="text-white text-xl" />
         </a>
       </div>
       <div className="lg:grid lg:grid-cols-2  ">
