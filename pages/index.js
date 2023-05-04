@@ -18,7 +18,7 @@ export default function Home() {
       <main className="bg-slate-100 px-6 md:px-10">
         <section id="hero" className="min-h-screen  max-w-3xl m-auto">
           {/* navbar */}
-          <nav className="py-10 mb-8 flex justify-between text-gray-600">
+          <nav className="py-8 md:mb-8 flex justify-between text-gray-600">
             <h1
               className="text-xl md:text-2xl font-spectral font-bold  uppercase
             "
@@ -44,7 +44,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row-reverse items-start justify-center">
             <div
               style={{ position: "relative" }}
-              className=" overflow-hidden mx-auto bg-gradient-to-br from-green-300  to-white rounded-full w-56 h-56 shadow-lg"
+              className=" overflow-hidden mx-auto bg-gradient-to-br from-gray-200  to-white rounded-full w-36 h-36 md:w-56 md:h-56 shadow-lg"
             >
               <Image
                 alt="Picture of the author"
@@ -63,11 +63,11 @@ export default function Home() {
                 I'm a Web Developer
               </h3>
               <p className="text-md py-3 md:py-5  leading-8 text-gray-700">
-                Let me demonstrate my skills and projects through a showcase.
+                Let me demonstrate my skills and projects through the showcase.
               </p>
             </div>
           </div>
-          <div className="mx-auto lg:my-20 flex justify-center items-center bg-gradient-to-b from-teal-400 to-green-600 rounded-full w-12 h-12 cursor-pointer ">
+          <div className="mx-auto mb-10 lg:my-20 flex justify-center items-center bg-gradient-to-b from-teal-400 to-green-600 rounded-full w-12 h-12 cursor-pointer ">
             <AiOutlineArrowDown className="text-white text-2xl " />
           </div>
         </section>

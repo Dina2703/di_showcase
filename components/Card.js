@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Card({ project }) {
   return (
-    <div className=" p-6 flex flex-col justify-center items-center ">
+    <div className=" p-6 flex flex-col justify-center items-center shadow-md lg:m-8 m-3 rounded-lg">
       <h1 className="text-center uppercase font-bold py-5 ">{project.name}</h1>
       <a href={project.url}>
         <Image src={project.img} className="cursor-pointer h-60 w-96" />
