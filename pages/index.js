@@ -64,16 +64,16 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row-reverse  justify-center lg:pt-8">
             <div
               style={{ position: "relative" }}
-              className=" overflow-hidden mx-auto  bg-gradient-to-r from-slate-500 to-slate-400 rounded-tl-[1.5rem] rounded-br-[1.5rem]  w-44 h-48 transform -skew-x-3 
-              lg:w-56 lg:h-60 shadow-[10px_10px_5px_rgb(204,204,204)]"
+              className=" overflow-hidden mx-auto  bg-gradient-to-r from-teal-500 to-slate-400 rounded-tl-[3rem] rounded-br-[3rem]  w-56 h-52 transform -skew-x-3 
+              lg:w-[40%] lg:h-72 shadow-[10px_10px_5px_rgb(204,204,204)]"
             >
               <Image
                 alt="Picture of the author"
                 src={avatar}
                 fill
-                sizes="(max-width: 224px)"
+                sizes="(max-width: 540px)"
                 placeholder="blur"
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover", objectPosition: "50%" }}
               />
             </div>
 

@@ -9,7 +9,7 @@ function Card({ project }) {
         <Image
           src={project.img}
           alt={project.name}
-          className="cursor-pointer h-60 w-96 hover:scale-[1.02] ease-in-out duration-300 transition-all"
+          className="cursor-pointer h-64 w-96 hover:scale-[1.02] ease-in-out duration-300 transition-all"
         />
       </a>
       <p className="py-3 dark:text-slate-200 ">{project.desc}</p>
