@@ -48,7 +48,12 @@ export default function Home() {
 
               <li>
                 <button className="md:text-md  duration-150 transition-all ease-in-out hover:scale-95 bg-gradient-to-b from-teal-600 to-teal-500  px-2 py-1 md:px-4 md:py-2 shadow-sm  rounded-md ">
-                  <a href="#" className="text-white text-sm ">
+                  <a
+                    href="Dinara_Idrissova_Resume.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-white text-sm "
+                  >
                     Resume
                   </a>
                 </button>
