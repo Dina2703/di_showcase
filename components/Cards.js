@@ -65,7 +65,7 @@ const projects = [
 function Cards() {
   return (
     <div className="bg-gray-200 dark:bg-gray-600 ">
-      <div className="h-10 bg-gray-600 flex items-center justify-end gap-5 pr-6 md:pr-12 ">
+      <div className="h-10 bg-teal-600  flex items-center justify-end gap-5 pr-6 md:pr-12 ">
         <a href="https://github.com/Dina2703" target="_blank">
           <BsGithub className="text-white text-xl" />
         </a>
