@@ -56,11 +56,11 @@ export default function Home() {
             </ul>
           </nav>
 
-          <div className="flex flex-col lg:flex-row-reverse justify-center ">
+          <div className="flex flex-col lg:flex-row-reverse  justify-center lg:pt-8">
             <div
               style={{ position: "relative" }}
-              className=" overflow-hidden mx-auto bg-gradient-to-r from-teal-700 to-teal-500 rounded-lg w-44 h-48 
-              md:w-56 md:h-60 shadow-lg"
+              className=" overflow-hidden mx-auto  bg-gradient-to-r from-slate-500 to-slate-400 rounded-tl-[1.5rem] rounded-br-[1.5rem]  w-44 h-48 transform -skew-x-3 
+              lg:w-56 lg:h-60 shadow-[10px_10px_5px_rgb(204,204,204)]"
             >
               <Image
                 alt="Picture of the author"
@@ -72,7 +72,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="text-center lg:text-start  p-5  ">
+            <div className="text-center lg:text-start   p-5  lg:transform lg:translate-y-10">
               <h2 className="text-3xl lg:text-5xl font-extrabold  py-2  text-transparent bg-clip-text bg-gradient-to-t from-teal-600 to-teal-400">
                 Hi, I'm Dinara
               </h2>
