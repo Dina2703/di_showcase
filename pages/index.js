@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
+import { useTheme } from "next-themes";
 import { useRef, useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiOutlineArrowDown } from "react-icons/ai";
@@ -7,7 +8,8 @@ import avatar from "../public/me2.png";
 import Cards from "@/components/Cards";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const { systemTheme, theme, setTheme } = useTheme();
+  const currentTheme = theme === "system" ? systemTheme : theme;
 
   const ref = useRef(null);
   const handleClick = () => {
@@ -15,7 +17,7 @@ export default function Home() {
   };
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div>
       <Head>
         <title>Dinara Idrissova | Portfolio</title>
         <meta
@@ -37,7 +39,9 @@ export default function Home() {
             <ul className="flex items-center gap-3 lg:gap-10">
               <li>
                 <BsFillMoonStarsFill
-                  onClick={() => setDarkMode((prev) => !prev)}
+                  onClick={() =>
+                    theme == "dark" ? setTheme("light") : setTheme("dark")
+                  }
                   className="cursor-pointer text-md dark:text-white"
                 />
               </li>

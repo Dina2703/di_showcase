@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-
+import { ThemeProvider } from "next-themes";
 import { Spectral } from "next/font/google";
 
 const spectral = Spectral({
@@ -11,8 +11,10 @@ const spectral = Spectral({
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <main className={`${spectral.variable} font-spectral`}>
-      <Component {...pageProps} />
-    </main>
+    <ThemeProvider attribute="class">
+      <main className={`${spectral.variable} font-spectral`}>
+        <Component {...pageProps} />
+      </main>
+    </ThemeProvider>
   );
 }
