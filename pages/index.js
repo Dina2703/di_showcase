@@ -1,19 +1,21 @@
 import Image from "next/image";
 import Head from "next/head";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import avatar from "../public/me2.png";
 import Cards from "@/components/Cards";
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
+
   const ref = useRef(null);
   const handleClick = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div>
+    <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Dinara Idrissova | Portfolio</title>
         <meta
@@ -21,12 +23,12 @@ export default function Home() {
           content="Dinara Idrissova -a front-end developer, proficient in  JS, CSS, HTML as well as modern front-end frameworks like React.js and NextJS, skilled in building dynamic and responsive user interfaces with a modern design aesthetic. "
         />
       </Head>
-      <main className="bg-slate-100 px-6 ">
+      <main className="bg-slate-100 dark:bg-gray-700 px-6 ">
         <section id="hero" className="min-h-screen  max-w-3xl m-auto">
           {/* navbar */}
           <nav className="py-8 md:mb-8 flex justify-between text-gray-600">
             <h1
-              className="text-xl md:text-2xl font-spectral font-bold  uppercase
+              className="text-xl md:text-2xl dark:text-white font-spectral font-bold  uppercase
             "
             >
               Dinara Idrissova
@@ -34,7 +36,10 @@ export default function Home() {
 
             <ul className="flex items-center gap-3 lg:gap-10">
               <li>
-                <BsFillMoonStarsFill className="cursor-pointer text-md " />
+                <BsFillMoonStarsFill
+                  onClick={() => setDarkMode((prev) => !prev)}
+                  className="cursor-pointer text-md dark:text-white"
+                />
               </li>
 
               <li>
@@ -47,28 +52,32 @@ export default function Home() {
             </ul>
           </nav>
 
-          <div className="flex flex-col lg:flex-row-reverse items-start justify-center">
+          <div className="flex flex-col lg:flex-row-reverse justify-center lg:pt-10">
             <div
               style={{ position: "relative" }}
-              className=" overflow-hidden mx-auto bg-gradient-to-br from-gray-200  to-white rounded-full w-36 h-36 md:w-56 md:h-56 shadow-lg"
+              className=" overflow-hidden mx-auto bg-gradient-to-br from-gray-200  to-white rounded-full w-36 h-36 md:w-56 md:h-56 shadow-lg "
             >
               <Image
                 alt="Picture of the author"
                 src={avatar}
                 fill
+                sizes="(max-width: 224px)"
+                placeholder="blur"
                 style={{ objectFit: "scale-down" }}
               />
             </div>
 
-            <div className="text-center lg:text-left p-5 md:p-10  m-auto">
-              <h2 className="text-3xl font-extrabold  py-2  text-transparent bg-clip-text bg-gradient-to-br from-teal-400 to-green-600">
+            <div className="text-center lg:text-start  p-5  ">
+              <h2 className="text-3xl lg:text-5xl font-extrabold  py-2  text-transparent bg-clip-text bg-gradient-to-br from-teal-400 to-green-600">
                 Hi, my name is{" "}
-                <span className=" block md:inline">Dinara Idrissova</span>
+                <span className=" block md:inline-block lg:block ">
+                  Dinara Idrissova
+                </span>
               </h2>
-              <h3 className="text-2xl py-2 text-gray-700">
+              <h3 className="text-2xl py-2 text-gray-700 dark:text-white">
                 I'm a Web Developer
               </h3>
-              <p className="text-md py-3 md:py-5  leading-8 text-gray-700">
+              <p className="text-md py-3 md:py-5  leading-8 text-gray-700 dark:text-white">
                 Let me demonstrate my skills and projects through the showcase.
               </p>
             </div>
@@ -81,7 +90,7 @@ export default function Home() {
           </button>
         </section>
 
-        <section id="projects" ref={ref}>
+        <section id="projects" ref={ref} className="pb-10">
           <Cards />
         </section>
       </main>

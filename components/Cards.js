@@ -64,7 +64,7 @@ const projects = [
 
 function Cards() {
   return (
-    <div className="bg-gray-200 pb-10">
+    <div className="bg-gray-200 dark:bg-gray-600 ">
       <div className="h-10 bg-gray-600 flex items-center justify-end gap-5 pr-6 md:pr-12 ">
         <a href="https://github.com/Dina2703" target="_blank">
           <BsGithub className="text-white text-xl" />
@@ -73,9 +73,9 @@ function Cards() {
           <FaRegEnvelope className="text-white text-xl" />
         </a>
       </div>
-      <div className="lg:grid lg:grid-cols-2  ">
+      <div className="lg:grid lg:grid-cols-2 gap-4 ">
         {projects.map((project) => {
-          return <Card project={project} />;
+          return <Card project={project} key={project.id} />;
         })}
       </div>
     </div>
