@@ -6,6 +6,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import avatar from "../public/me3.png";
 import Cards from "@/components/Cards";
+import avatar_bg from "../public/avatar_bg.jpg";
 
 export default function Home() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -66,9 +67,8 @@ export default function Home() {
 
           <div className="flex items-center justify-between flex-col lg:flex-row-reverse   ">
             <div
-              style={{ position: "relative" }}
-              className=" overflow-hidden mr-3  bg-gradient-to-r from-teal-500 to-slate-400 rounded-tl-[3rem] rounded-br-[3rem]  w-52 h-56 transform -skew-x-3 
-              lg:w-[37%] lg:h-72 shadow-[10px_10px_5px_rgb(204,204,204)]"
+              className=" overflow-hidden mr-3 rounded-tl-[3rem] rounded-br-[3rem] relative w-52 h-56 transform -skew-x-3 
+              lg:w-[33%] lg:h-72 shadow-[10px_10px_5px_rgb(122,122,122)] bg-avatar_bg "
             >
               <Image
                 alt="Picture of the author"
