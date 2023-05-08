@@ -102,7 +102,7 @@ function Cards() {
       </div>
       <div>
         <h3
-          className="px-5 py-10 text-center max-w-2xl  m-auto text-lg font-semibold text-gray-600 dark:text-white
+          className="p-6  text-center max-w-2xl  m-auto text-lg font-semibold text-gray-600 dark:text-white
         "
         >
           I love creating a fully responsive design that seamlessly adapts to
@@ -110,7 +110,7 @@ function Cards() {
           experience across devices.
         </h3>
       </div>
-      <div className="lg:grid lg:grid-cols-2 gap-4 ">
+      <div className="lg:grid lg:grid-cols-2 gap-6 lg:p-8 ">
         {projects.map((project) => {
           return <Card project={project} key={project.id} />;
         })}
