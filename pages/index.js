@@ -25,8 +25,11 @@ export default function Home() {
           content="Dinara Idrissova -a front-end developer, proficient in  JS, CSS, HTML as well as modern front-end frameworks like React.js and NextJS, skilled in building dynamic and responsive user interfaces with a modern design aesthetic. "
         />
       </Head>
-      <main className="bg-slate-100 dark:bg-gray-700 px-6 ">
-        <section id="hero" className="min-h-screen  max-w-3xl m-auto">
+      <main className="bg-slate-50 dark:bg-gray-700 px-6 ">
+        <section
+          id="hero"
+          className="min-h-screen  max-w-5xl m-auto md:px-10 lg:px-16 "
+        >
           {/* navbar */}
           <nav className="py-8 md:mb-8 flex justify-between text-gray-600">
             <h1
@@ -61,11 +64,11 @@ export default function Home() {
             </ul>
           </nav>
 
-          <div className="flex flex-col lg:flex-row-reverse  justify-center lg:pt-8">
+          <div className="flex items-center justify-between flex-col lg:flex-row-reverse   ">
             <div
               style={{ position: "relative" }}
-              className=" overflow-hidden mx-auto  bg-gradient-to-r from-teal-500 to-slate-400 rounded-tl-[3rem] rounded-br-[3rem]  w-56 h-52 transform -skew-x-3 
-              lg:w-[40%] lg:h-72 shadow-[10px_10px_5px_rgb(204,204,204)]"
+              className=" overflow-hidden mr-3  bg-gradient-to-r from-teal-500 to-slate-400 rounded-tl-[3rem] rounded-br-[3rem]  w-52 h-56 transform -skew-x-3 
+              lg:w-[37%] lg:h-72 shadow-[10px_10px_5px_rgb(204,204,204)]"
             >
               <Image
                 alt="Picture of the author"
@@ -77,7 +80,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="text-center lg:text-start   p-5  lg:transform lg:translate-y-10">
+            <div className="text-center lg:text-start   p-5 pl-0  lg:transform lg:translate-y-10">
               <h2 className="text-3xl lg:text-5xl font-extrabold  py-2  text-transparent bg-clip-text bg-gradient-to-t from-teal-600 to-teal-400">
                 Hi, I'm Dinara
               </h2>

@@ -5,10 +5,11 @@ import tutorWebsite from "../public/anara-eng.jpeg";
 import domCoffee from "../public/dom-coffee.png";
 import print from "../public/print.png";
 import travel from "../public/travel.png";
-import memoryGame from "../public/memory-game.png";
+import memoryGame from "../public/memory_game.png";
 import bookShelf from "../public/book-shelf.png";
 import url_short from "../public/url_shortender.png";
 import advice_generator from "../public/advice_generator.jpg";
+import ui_design from "../public/ui_design.png";
 
 import Card from "./Card";
 
@@ -25,7 +26,7 @@ const projects = [
     name: "Advice generator app",
     url: "https://url-shortinig-api.vercel.app/ ",
     img: advice_generator,
-    desc: "The challenge is to build out an advice generator app using the [Advice Slip API](https://api.adviceslip.com). Built with React and Tailwind CSS.",
+    desc: "This advice generator app built with React and Tailwind CSS, using Advice Slip API (https://api.adviceslip.com).",
     gitUrl: "https://advice-generator-self.vercel.app/",
     id: 2,
   },
@@ -33,7 +34,7 @@ const projects = [
     name: "tutor website",
     url: "https://www.englishwithanara.com/",
     img: tutorWebsite,
-    desc: "The tutor website template built using React and Tailwind CSS",
+    desc: "A real business website. Built using React and Tailwind CSS",
     gitUrl: "https://github.com/Dina2703/anara-website",
     id: 3,
   },
@@ -49,39 +50,48 @@ const projects = [
     name: "Travel agency Landing Page template",
     url: "https://travel-react-template.netlify.app/",
     img: travel,
-    desc: "The  Landing Page template built using React and CSS3",
+    desc: "Responsive  Landing Page template built with React and CSS3",
     gitUrl: "https://github.com/Dina2703/travel-site-template",
     id: 5,
   },
   {
-    name: "book-shelf app template",
+    name: "a collection of responsive layouts",
     url: "https://audio-books-next.vercel.app/",
-    img: bookShelf,
-    desc: "The template built using Next JS and CSS3",
-    gitUrl: "https://github.com/Dina2703/next001",
+    img: ui_design,
+    desc: "UI challenges from Frontend Mentor platform has helpted me to level up my CSS skills",
+    gitUrl: "https://github.com/Dina2703/css_small-projects",
     id: 6,
   },
-  {
-    name: "printing services website template",
-    url: "https://print-website.vercel.app/",
-    img: print,
-    desc: "The tutor website template built using Next JS and MUI Material",
-    gitUrl: "https://github.com/Dina2703/print-website/",
-    id: 7,
-  },
+  // {
+  //   name: "book-shelf app template",
+  //   url: "https://audio-books-next.vercel.app/",
+  //   img: bookShelf,
+  //   desc: "The template built using Next JS and CSS3",
+  //   gitUrl: "https://github.com/Dina2703/next001",
+  //   id: 7,
+  // },
+
+  // {
+  //   name: "printing services website template",
+  //   url: "https://print-website.vercel.app/",
+  //   img: print,
+  //   desc: "The tutor website template built using Next JS and MUI Material",
+  //   gitUrl: "https://github.com/Dina2703/print-website/",
+  //   id: 9,
+  // },
   {
     name: "memory game",
     url: "https://memory-game-dina.netlify.app/",
     img: memoryGame,
-    desc: "The tutor website template built using HTML5, CSS3, JS",
+    desc: "Memory game built with React",
     gitUrl: "https://github.com/Dina2703/memory-game",
-    id: 8,
+    id: 10,
   },
 ];
 
 function Cards() {
   return (
-    <div className="bg-white dark:bg-gray-600 ">
+    <div className="bg-white dark:bg-gray-600 max-w-4xl m-auto ">
       <div className="h-10 bg-teal-600  flex items-center justify-end gap-5 pr-6 md:pr-12 ">
         <a href="https://github.com/Dina2703" target="_blank">
           <BsGithub className="text-white text-xl" />
@@ -92,12 +102,12 @@ function Cards() {
       </div>
       <div>
         <h3
-          className="text-center max-w-2xl py-5 m-auto text-lg font-semibold text-gray-600 dark:text-white
+          className="px-5 py-10 text-center max-w-2xl  m-auto text-lg font-semibold text-gray-600 dark:text-white
         "
         >
-          Utilizing the power of React and CSS created a fully responsive design
-          that seamlessly adapts to both mobile and desktop environments,
-          providing an optimal user experience across devices.
+          I love creating a fully responsive design that seamlessly adapts to
+          both mobile and desktop environments, providing an optimal user
+          experience across devices.
         </h3>
       </div>
       <div className="lg:grid lg:grid-cols-2 gap-4 ">
