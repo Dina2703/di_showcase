@@ -4,9 +4,8 @@ import { useTheme } from "next-themes";
 import { useRef, useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiOutlineArrowDown } from "react-icons/ai";
-import avatar from "../public/me3.png";
+import avatar from "../public/avatar_small.png";
 import Cards from "@/components/Cards";
-import avatar_bg from "../public/avatar_bg.jpg";
 
 export default function Home() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -32,9 +31,9 @@ export default function Home() {
           className="min-h-screen  max-w-5xl m-auto md:px-10 lg:px-16 "
         >
           {/* navbar */}
-          <nav className="py-8 md:mb-8 flex justify-between text-gray-600">
+          <nav className="py-8 lg:mb-8 flex justify-between text-gray-600">
             <h1
-              className="text-xl md:text-2xl dark:text-white font-spectral font-bold  uppercase
+              className="text-xl lg:text-2xl dark:text-white font-spectral font-bold  uppercase
             "
             >
               Dinara Idrissova
@@ -51,7 +50,7 @@ export default function Home() {
               </li>
 
               <li>
-                <button className="md:text-md  duration-150 transition-all ease-in-out hover:scale-95 bg-gradient-to-b from-teal-600 to-teal-500  px-2 py-1 md:px-4 md:py-2 shadow-sm  rounded-md ">
+                <button className="lg:text-md  duration-150 transition-all ease-in-out hover:scale-95 bg-gradient-to-b from-teal-600 to-teal-500  px-2 py-1 lg:px-4 md:py-2 shadow-sm  rounded-md ">
                   <a
                     href="Dinara_Idrissova_Resume.pdf"
                     target="_blank"
@@ -65,17 +64,17 @@ export default function Home() {
             </ul>
           </nav>
 
-          <div className="flex items-center justify-between flex-col lg:flex-row-reverse   ">
+          <div className="flex items-center justify-between flex-col lg:flex-row-reverse   xl:mt-20">
             <div
-              className=" overflow-hidden mr-3 rounded-tl-[3rem] rounded-br-[3rem] relative w-52 h-56 transform -skew-x-3 
-              lg:w-[33%] lg:h-72 shadow-[10px_10px_5px_rgb(122,122,122)] bg-avatar_bg "
+              className=" overflow-hidden mr-3 rounded-full relative w-44 h-44
+              md:w-52 md:h-52 lg:w-72 lg:h-72 shadow-[2px_2px_8px_rgb(122,122,122)] bg-avatar_bg bg-cover "
             >
               <Image
                 alt="Picture of the author"
                 src={avatar}
                 fill
-                sizes="(max-width: 540px)"
-                placeholder="blur"
+                sizes="(max-width: 300px) 100vw"
+                priority
                 style={{ objectFit: "cover", objectPosition: "50%" }}
               />
             </div>
