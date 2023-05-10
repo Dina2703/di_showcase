@@ -64,7 +64,7 @@ export default function Home() {
             </ul>
           </nav>
 
-          <div className="flex items-center justify-between flex-col lg:flex-row-reverse   xl:mt-20">
+          <div className="flex items-center justify-between flex-col lg:flex-row-reverse  mt-4 xl:mt-20">
             <div
               className=" overflow-hidden mr-3 rounded-full relative w-44 h-44
               md:w-52 md:h-52 lg:w-72 lg:h-72 shadow-[2px_2px_8px_rgb(122,122,122)] bg-avatar_bg bg-cover "
@@ -79,7 +79,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="text-center lg:text-start   p-5 pl-0  lg:transform lg:translate-y-10">
+            <div className="text-center lg:text-start   p-8  lg:transform lg:translate-y-10">
               <h2 className="text-3xl lg:text-5xl font-extrabold  py-2  text-transparent bg-clip-text bg-gradient-to-t from-teal-600 to-teal-400">
                 Hi, I'm Dinara
               </h2>
@@ -93,7 +93,7 @@ export default function Home() {
           </div>
           <button
             onClick={handleClick}
-            className="mx-auto mb-10 lg:my-20 flex justify-center items-center bg-gradient-to-b from-teal-600 to-teal-500 rounded-full w-12 h-12 cursor-pointer hover:scale-105 ease-in-out duration-150 transition-all shadow-md"
+            className="mx-auto mb-4 lg:my-20 flex justify-center items-center bg-gradient-to-b from-teal-600 to-teal-500 rounded-full w-12 h-12 cursor-pointer hover:scale-105 ease-in-out duration-150 transition-all shadow-md"
           >
             <AiOutlineArrowDown className="text-white text-2xl " />
           </button>
