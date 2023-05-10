@@ -66,8 +66,8 @@ export default function Home() {
 
           <div className="flex items-center justify-between flex-col lg:flex-row-reverse  mt-4 xl:mt-20">
             <div
-              className=" overflow-hidden mr-3 rounded-full relative w-44 h-44
-              md:w-52 md:h-52 lg:w-72 lg:h-72 shadow-[2px_2px_8px_rgb(122,122,122)] bg-avatar_bg bg-cover "
+              className=" overflow-hidden mr-3 rounded-full relative w-52 h-52
+              md:w-52 md:h-52 lg:w-72 lg:h-72 shadow-[2px_2px_8px_rgb(122,122,122)] bg-avatar_bg bg-cover border-2 border-gray-400"
             >
               <Image
                 alt="Picture of the author"
@@ -75,7 +75,7 @@ export default function Home() {
                 fill
                 sizes="(max-width: 300px) 100vw"
                 priority
-                style={{ objectFit: "cover", objectPosition: "50%" }}
+                style={{ objectFit: "cover" }}
               />
             </div>
 
