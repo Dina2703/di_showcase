@@ -1,19 +1,34 @@
 import Image from "next/image";
 import Head from "next/head";
 import { useTheme } from "next-themes";
-import { useRef, useState } from "react";
+import { useState, useEffect } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiOutlineArrowDown } from "react-icons/ai";
+import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
 import avatar from "../public/avatar_small.png";
 import Cards from "@/components/Cards";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Home() {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
 
-  const ref = useRef(null);
-  const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
+  const [backToTop, setBackToTop] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        setBackToTop(true);
+      } else {
+        setBackToTop(false);
+      }
+    });
+  }, []);
+
+  const scrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -25,13 +40,13 @@ export default function Home() {
           content="Dinara Idrissova -a front-end developer, proficient in  JS, CSS, HTML as well as modern front-end frameworks like React.js and NextJS, skilled in building dynamic and responsive user interfaces with a modern design aesthetic. "
         />
       </Head>
-      <main className="bg-slate-50 dark:bg-gray-700 px-6 ">
+      <main className="bg-slate-50 dark:bg-gray-700 px-6 relative">
         <section
           id="hero"
           className="min-h-screen  max-w-5xl m-auto md:px-10 lg:px-16 "
         >
           {/* navbar */}
-          <nav className="py-8 lg:mb-8 flex justify-between text-gray-600">
+          <nav className="lg:px-8 py-8  lg:mb-8 flex justify-between text-gray-600">
             <h1
               className="text-xl lg:text-2xl dark:text-white font-spectral font-bold  uppercase
             "
@@ -64,10 +79,10 @@ export default function Home() {
             </ul>
           </nav>
 
-          <div className="flex items-center justify-between flex-col lg:flex-row-reverse  mt-4 xl:mt-20">
+          <div className="flex items-center justify-between flex-col lg:flex-row-reverse  mt-10 xl:mt-20">
             <div
-              className=" overflow-hidden mr-3 rounded-full relative w-52 h-52
-              md:w-52 md:h-52 lg:w-72 lg:h-72 shadow-[2px_2px_8px_rgb(122,122,122)] bg-avatar_bg bg-cover border-2 border-gray-400"
+              className=" overflow-hidden lg:mr-8 rounded-full relative w-48 h-52
+              md:w-52 md:h-56 lg:w-60 lg:h-64 shadow-[2px_2px_8px_rgb(122,122,122)] bg-avatar_bg bg-cover border-2 border-gray-400"
             >
               <Image
                 alt="Picture of the author"
@@ -91,15 +106,34 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <button
-            onClick={handleClick}
-            className="mx-auto mb-4 lg:my-20 flex justify-center items-center bg-gradient-to-b from-teal-600 to-teal-500 rounded-full w-12 h-12 cursor-pointer hover:scale-105 ease-in-out duration-150 transition-all shadow-md"
+          <Link
+            activeClass="active"
+            to="projects"
+            spy
+            smooth
+            offset={0}
+            duration={1500}
+            className="mx-auto mb-4 lg:my-20 flex justify-center items-center bg-gradient-to-b from-teal-600 to-teal-500 rounded-full w-12 h-12 cursor-pointer hover:scale-105 ease-in-out duration-150 transition-all shadow-md "
           >
             <AiOutlineArrowDown className="text-white text-2xl " />
-          </button>
+          </Link>
         </section>
 
-        <section id="projects" ref={ref} className="pb-10">
+        <section id="projects" className="pb-10" title="projects">
+          {backToTop && (
+            <div
+              className="
+            fixed bottom-14 right-10 lg:right-20 xl:right-28 ml-auto   bg-gradient-to-b  from-teal-600 to-teal-500  rounded-full w-8 h-8 cursor-pointer hover:scale-105 ease-in-out duration-150 transition-all shadow-md z-50"
+            >
+              <button
+                onClick={scrollUp}
+                className="flex items-center justify-center h-full w-full"
+              >
+                <AiOutlineArrowUp className="text-white text-lg " />
+              </button>
+            </div>
+          )}
+
           <Cards />
         </section>
       </main>
