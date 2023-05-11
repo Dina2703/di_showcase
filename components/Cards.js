@@ -6,7 +6,7 @@ import domCoffee from "../public/dom-coffee.png";
 import print from "../public/print.png";
 import travel from "../public/travel.png";
 import memoryGame from "../public/memory_game.png";
-import bookShelf from "../public/book-shelf.png";
+import countries_api from "../public/countries_api.png";
 import url_short from "../public/url_shortender.png";
 import advice_generator from "../public/advice_generator.jpg";
 import ui_design from "../public/ui_design.png";
@@ -39,6 +39,14 @@ const projects = [
     id: 3,
   },
   {
+    name: "Countries of the World app",
+    url: "https://rest-country-api-jet.vercel.app/",
+    img: countries_api,
+    desc: "REST Countries API with color theme switcher",
+    gitUrl: "https://github.com/Dina2703/rest_country_api.git",
+    id: 7,
+  },
+  {
     name: "coffee-shop website template",
     url: "https://coffee-shop-dom.netlify.app/",
     img: domCoffee,
@@ -62,14 +70,6 @@ const projects = [
     gitUrl: "https://github.com/Dina2703/css_small-projects",
     id: 6,
   },
-  // {
-  //   name: "book-shelf app template",
-  //   url: "https://audio-books-next.vercel.app/",
-  //   img: bookShelf,
-  //   desc: "The template built using Next JS and CSS3",
-  //   gitUrl: "https://github.com/Dina2703/next001",
-  //   id: 7,
-  // },
 
   // {
   //   name: "printing services website template",
