@@ -64,7 +64,7 @@ const projects = [
   },
   {
     name: "a collection of responsive layouts",
-    url: "https://audio-books-next.vercel.app/",
+    url: "https://css-small-projects.vercel.app/",
     img: ui_design,
     desc: "UI challenges from Frontend Mentor platform has helpted me to level up my CSS skills",
     gitUrl: "https://github.com/Dina2703/css_small-projects",

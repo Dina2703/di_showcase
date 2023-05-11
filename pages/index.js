@@ -79,7 +79,7 @@ export default function Home() {
             </ul>
           </nav>
 
-          <div className="flex items-center justify-between flex-col lg:flex-row-reverse  mt-10 xl:mt-20">
+          <div className="flex items-center justify-between flex-col lg:flex-row-reverse   xl:mt-20">
             <div
               className=" overflow-hidden lg:mr-8 rounded-full relative w-48 h-52
               md:w-52 md:h-56 lg:w-60 lg:h-64 shadow-[2px_2px_8px_rgb(122,122,122)] bg-avatar_bg bg-cover border-2 border-gray-400"
