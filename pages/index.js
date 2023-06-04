@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
-import avatar from "../public/avatar_small.png";
+import avatar from "../public/avatar_with_bg.png";
 import Cards from "@/components/Cards";
 import { Link, animateScroll as scroll } from "react-scroll";
 
