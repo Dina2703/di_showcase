@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
-import avatar from "../public/avatar_with_bg.png";
+import avatar from "../public/avatar_with_bg2.png";
 import Cards from "@/components/Cards";
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -82,15 +82,16 @@ export default function Home() {
           <div className="flex items-center justify-between flex-col lg:flex-row-reverse   xl:mt-20">
             <div
               className=" overflow-hidden lg:mr-8 rounded-full relative w-48 h-52
-              md:w-52 md:h-56 lg:w-60 lg:h-64 shadow-[2px_2px_8px_rgb(122,122,122)] bg-avatar_bg bg-cover border-2 border-gray-400"
+              md:w-52 md:h-52 lg:w-64 lg:h-64  bg-avatar_bg bg-cover border-2 border-gray-400"
             >
               <Image
-                alt="Picture of the author"
+                alt="Dinara Idrissova"
                 src={avatar}
                 fill
                 sizes="(max-width: 300px) 100vw"
                 priority
                 style={{ objectFit: "cover" }}
+                placeholder="blur"
               />
             </div>
 
