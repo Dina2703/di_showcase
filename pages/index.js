@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
-import avatar from "../public/avatar_with_bg2.png";
+import avatar from "../public/avatar_with_bg.png";
 import Cards from "@/components/Cards";
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -81,7 +81,7 @@ export default function Home() {
 
           <div className="flex items-center justify-between flex-col lg:flex-row-reverse   xl:mt-20">
             <div
-              className=" overflow-hidden lg:mr-8 rounded-full relative w-48 h-52
+              className=" overflow-hidden lg:mr-8 rounded-full relative w-48 h-48
               md:w-52 md:h-52 lg:w-64 lg:h-64  bg-avatar_bg bg-cover border-2 border-gray-400"
             >
               <Image
