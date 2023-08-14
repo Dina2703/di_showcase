@@ -19,6 +19,15 @@ module.exports = {
       backgroundImage: {
         avatar_bg: "url('../public/avatar_bg.jpg')",
       },
+      animation: {
+        "custom-pulse": "pulse 10s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      },
+      keyframes: {
+        "custom-pulse": {
+          "0%, 100%": { opacity: 0 },
+          "50%": { opacity: 0 },
+        },
+      },
     },
   },
   plugins: [],

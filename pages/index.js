@@ -4,6 +4,8 @@ import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
+import { BsChatRightDotsFill, BsChatRightDots } from "react-icons/bs";
+
 import avatar from "../public/avatar_with_bg.png";
 import Cards from "@/components/Cards";
 import { Link, animateScroll as scroll } from "react-scroll";
@@ -137,6 +139,16 @@ export default function Home() {
 
           <Cards />
         </section>
+        <div
+          className="fixed bottom-24 2xl:bottom-40 2xl:right-64 right-10 text-3xl 2xl:text-4xl cursor-pointer hover:scale-110 ease-in-out duration-150 transition-all animate-custom-pulse
+        "
+        >
+          <a href="http://m.me/dinara.idrissova.1" target="_blank">
+            <BsChatRightDotsFill
+              className={theme == "dark" ? "text-white" : "text-gray-700"}
+            />
+          </a>
+        </div>
       </main>
     </div>
   );
