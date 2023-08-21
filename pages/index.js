@@ -4,7 +4,8 @@ import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
-import { FaFacebookMessenger } from "react-icons/fa";
+// import { FaFacebookMessenger } from "react-icons/fa";
+import { BiMessageAltEdit } from "react-icons/bi";
 
 import avatar from "../public/avatar_with_bg.png";
 import Cards from "@/components/Cards";
@@ -140,11 +141,11 @@ export default function Home() {
           <Cards />
         </section>
         <div
-          className="fixed bottom-[30px] md:bottom-14 2xl:bottom-40 2xl:right-64 right-10 text-3xl 2xl:text-4xl cursor-pointer cursor-pointer hover:scale-110 ease-in-out duration-150 transition-all shadow-md  bg-pink-400 p-2 md:p-3 rounded-md
+          className="fixed bottom-[30px] md:bottom-14 2xl:bottom-40 2xl:right-64 right-10 text-3xl 2xl:text-4xl cursor-pointer  hover:scale-110 ease-in-out duration-150 transition-all shadow-md  bg-pink-400 p-2  rounded-md
         "
         >
-          <a href="http://m.me/dinara.idrissova.1" target="_blank">
-            <FaFacebookMessenger className="text-white text-[24px]" />
+          <a href="mailto:dina.b.idrissova@gmail.com" target="_blank">
+            <BiMessageAltEdit className="text-white text-[32px]" />
           </a>
         </div>
       </main>
