@@ -24,7 +24,7 @@ const projects = [
   },
   {
     name: "Advice generator app",
-    url: "https://url-shortinig-api.vercel.app/ ",
+    url: "https://advice-generator-self.vercel.app/ ",
     img: advice_generator,
     desc: "This advice generator app built with React and Tailwind CSS, using Advice Slip API (https://api.adviceslip.com).",
     gitUrl: "https://github.com/Dina2703/advice_generator",
