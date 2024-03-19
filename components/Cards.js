@@ -10,10 +10,19 @@ import countries_api from "../public/countries_api.png";
 import url_short from "../public/url_shortender.png";
 import advice_generator from "../public/advice_generator.jpg";
 import ui_design from "../public/ui_design.png";
+import personal_website from "../public/personal_website.png";
 
 import Card from "./Card";
 
 const projects = [
+  {
+    name: "Personal Website",
+    url: "https://www.zhankhvan.com/",
+    img: personal_website,
+    desc: "Painting Artist website. Built with React and Tailwind CSS.",
+    gitUrl: "https://github.com/Dina2703/zhan_art.git ",
+    id: 11,
+  },
   {
     name: "Url Shortender",
     url: "https://url-shortinig-api.vercel.app/ ",
@@ -91,18 +100,18 @@ const projects = [
 
 function Cards() {
   return (
-    <div className="bg-white dark:bg-gray-600 max-w-5xl m-auto ">
-      <div className="h-10 bg-teal-600  flex items-center justify-end gap-5 pr-6 md:pr-12 ">
+    <div className=" dark:bg-gray-700 max-w-5xl m-auto ">
+      <div className="h-14 bg-gradient-to-br from-sky-900 to-teal-800 flex items-center justify-end gap-5 pr-6 md:pr-12 ">
         <a href="https://github.com/Dina2703" target="_blank">
-          <BsGithub className="text-white text-xl" />
+          <BsGithub className="text-white text-2xl" />
         </a>
         <a href="mailto:dina.b.idrissova@gamil.com" target="_blank">
-          <FaRegEnvelope className="text-white text-xl" />
+          <FaRegEnvelope className="text-white text-2xl" />
         </a>
       </div>
       <div>
         <h3
-          className="p-6  text-center max-w-2xl  m-auto text-lg font-semibold text-gray-600 dark:text-white
+          className="p-6  text-center max-w-2xl  m-auto text-2xl font-semibold text-gray-600 dark:text-white md:my-5 
         "
         >
           I love creating a fully responsive design that seamlessly adapts to
