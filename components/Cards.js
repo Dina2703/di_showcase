@@ -101,7 +101,7 @@ const projects = [
 function Cards() {
   return (
     <div className=" dark:bg-gray-700 max-w-5xl m-auto ">
-      <div className="h-14 bg-gradient-to-br from-sky-900 to-teal-800 flex items-center justify-end gap-5 pr-6 md:pr-12 ">
+      <div className="h-14 bg-gradient-to-br from-sky-400 to-teal-500 flex items-center justify-end gap-5 pr-6 md:pr-12 ">
         <a href="https://github.com/Dina2703" target="_blank">
           <BsGithub className="text-white text-2xl" />
         </a>

@@ -49,7 +49,7 @@ export default function Home() {
           className=" min-h-screen flex flex-col   max-w-5xl m-auto  md:px-10 lg:px-16 "
         >
           {/* navbar */}
-          <nav className=" py-8  lg:mb-8 flex justify-between text-gray-600">
+          <nav className=" py-8  lg:mb-8 flex justify-between items-center text-gray-600">
             <h1
               className="text-xl lg:text-4xl dark:text-white font-spectral font-bold  uppercase
             "
@@ -57,7 +57,7 @@ export default function Home() {
               Dinara Idrissova
             </h1>
 
-            <ul className="flex items-center gap-3 lg:gap-8 ">
+            <ul className="flex items-center gap-5 lg:gap-8 ">
               <li>
                 <BsFillMoonStarsFill
                   onClick={() =>
@@ -68,12 +68,12 @@ export default function Home() {
               </li>
 
               <li>
-                <button className=" bg-gradient-to-br from-sky-900 to-teal-800 px-5 py-2 shadow-lg rounded-md">
+                <button className=" bg-gradient-to-br from-sky-300 to-teal-500  px-5 py-2 shadow-lg rounded-md">
                   <a
                     href="Dinara_Idrissova_Resume.pdf"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-white text-xl lowercase"
+                    className="text-white md:text-xl text-sm  lowercase"
                   >
                     Resume
                   </a>
@@ -83,7 +83,7 @@ export default function Home() {
           </nav>
 
           <div className="flex flex-1 flex-col items-center justify-between h-full  py-5 mb-5">
-            <div className="flex   items-center justify-center my-10 flex-col lg:flex-row-reverse   ">
+            <div className="flex   items-center justify-center md:my-10 flex-col lg:flex-row-reverse   ">
               <div
                 className=" overflow-hidden lg:mr-8 rounded-full relative w-48 h-48
               md:w-52 md:h-52 lg:w-72 lg:h-64  bg-avatar_bg border-2 border-sky-300 shadow-xl "
