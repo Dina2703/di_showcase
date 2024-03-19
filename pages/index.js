@@ -68,7 +68,7 @@ export default function Home() {
               </li>
 
               <li>
-                <button className=" bg-gradient-to-br from-sky-300 to-teal-500  px-5 py-2 shadow-lg rounded-md">
+                <button className=" bg-gradient-to-br from-sky-300 to-teal-500  md:px-5 md:py-2 px-3 py-1 shadow-lg rounded-md">
                   <a
                     href="Dinara_Idrissova_Resume.pdf"
                     target="_blank"
@@ -120,9 +120,9 @@ export default function Home() {
                 smooth
                 offset={0}
                 duration={1500}
-                className="mx-auto mb-12  flex justify-center items-center bg-gradient-to-r from-teal-300 to-sky-500 rounded-full w-14 h-14 cursor-pointer hover:scale-110   ease-in-out duration-150 transition-all shadow-md "
+                className="mx-auto mb-12  flex justify-center items-center bg-gradient-to-r from-teal-300 to-sky-500 rounded-full md:w-14 md:h-14 w-11 h-11 cursor-pointer hover:scale-110   ease-in-out duration-150 transition-all shadow-md "
               >
-                <AiOutlineArrowDown className="text-white text-3xl " />
+                <AiOutlineArrowDown className="text-white md:text-3xl text-lg" />
               </Link>
             </div>
           </div>
